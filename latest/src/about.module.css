@@ -1,0 +1,50 @@
+.div1{
+    background-color: blue;
+    width: 100%;
+    height: 100px;
+    
+}
+body{
+    margin: 0;
+    background-color: #fff;
+}
+.abt{
+    margin-left: 0%;
+    color: rgb(235, 235, 241);
+    font-size: 30px;
+    
+    
+}
+
+.div2 a{ 
+    float: right;
+    right: 10%;
+    font-size: 30px;
+    top: -80px; 
+    position: relative;
+    padding-left: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    
+    text-decoration: none;
+    color: rgb(238, 240, 243);
+   
+}
+body{
+
+    background-color: white;
+    color: rgb(180, 180, 212);
+    
+    }
+    @media screen and (max-width:800px) {
+    
+        body{
+    
+    background-color: rgb(247, 13, 13);
+    color: aliceblue;
+    
+        }
+     
+    
+    }
+
+   

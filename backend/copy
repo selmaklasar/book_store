@@ -1,0 +1,81 @@
+const express= require('express')
+const mongoose=require('mongoose')
+const cors=require('cors')
+mongoose.connect('mongodb://localhost:27017/mernstack')
+
+
+
+const app=express()
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+const user=new mongoose.Schema({ 
+
+    FirstName:String,
+    LastName:String,
+    Email:String,
+    Phone:Number,
+    Password:Number
+    
+    })
+    const model=mongoose.model('stack',user)
+
+
+app.use(cors())
+
+
+ 
+    app.post('/register', async (req, res) => {
+        const { firstname, lastname, email, phone, password, confirm_password } = req.body;
+    
+    console.log(firstname)
+    });
+
+
+app.listen(4000,()=>{
+   console.log("server  is started")
+
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if (password === confirm_password) {
+    try {
+        const newUser = new UserModel({
+            FirstName: firstname,
+            LastName: lastname,
+            Email: email,
+            Phone: phone,
+            Password: password
+        });
+        await newUser.save();
+        console.log(newUser);
+        res.status(200).send(newUser);
+    } catch (error) {
+        console.error(error);
+        res.status(500).send(error);
+    }
+} else {
+    console.log("Passwords do not match");
+    res.status(400).send("Passwords do not match");
+}
+

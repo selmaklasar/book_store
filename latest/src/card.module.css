@@ -1,0 +1,50 @@
+
+
+.card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+.card-details {
+  padding: 20px;
+}
+
+.book {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.author {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #007bff; 
+}
+
+.add-to-cart {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #0056b3; 
+}

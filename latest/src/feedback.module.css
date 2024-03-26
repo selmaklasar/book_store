@@ -1,0 +1,142 @@
+.form{
+    margin-left: 100px;
+    padding-top: 20px;    
+}
+
+.h2{
+    color: rgb(253, 253, 254);
+   
+    animation-name: body;
+    animation-duration: 4s;
+
+}
+@keyframes body{
+    from{
+       color: rgb(240, 240, 245);
+    }to{
+        color: rgb(57, 12, 240);      
+}
+}
+.h2{
+    font-size: 35px;
+    text-align: center;
+    color: rgb(242, 242, 247);
+    margin-top: 10%;
+    margin-left: 39px;
+}
+
+
+
+label{
+    width: 145px;
+    display: block;
+    font-size: 25px;
+    color: #320ced;
+    margin: 0.2cm;
+    font-weight: bold;
+    position: relative;
+    left: -1%;
+    
+
+    
+}
+   
+.num{
+    position: relative;
+    left: -15px;
+    font-size: 25px;
+    color: #3315f0;
+    
+    left: 10px;
+
+}
+input{
+    width: 120px;
+    color: rgb(12, 12, 225);
+    border: 1px solid blue;
+    margin: 5px;
+    font-size: 24px;
+    border-radius: 2px;
+    width: 9cm;
+    
+}
+.name{
+    position: relative;
+    left: -25px;
+    color: #300ff0;
+    font-size: 25px;
+    
+    left: 11px;
+    margin-left: 73.559;
+
+}
+.email{
+    position: relative;
+    left: -25px;
+    color: #3013ea;
+    font-size: 25px;
+    left: 11px;
+    margin-left: 73.559;
+
+
+}
+.fdback{
+     padding-top: 15px;
+     left: 11px;
+    margin-left: 73.559;
+
+    
+}
+.submit{
+    width: 120px;
+    display: block;
+    background-color: blue;
+    color: white;
+    font-size: 22px;
+    padding: 4px;
+    
+    left: 10px;
+    
+    margin-left: 102px;
+
+
+   
+}
+.feedback{
+    position: relative;
+    left: -25px;
+    color: #1010f3;
+    font-size: 25px;
+    left: 11px;
+    margin-left: 73.559;
+
+}
+
+
+
+
+.pagination a{
+
+float: left;
+padding-left: 5%;
+text-decoration: none;
+color: red;
+}
+form {
+    width: 500px;
+    height: 500px;
+    background-color: aliceblue; 
+    padding-left: 190px;
+}
+.div1{
+    margin-left: 271px;
+
+}
+@media screen and(max-width:800px) {
+    form{
+        width: 200px;
+        height: 200px;
+
+    }
+    
+}

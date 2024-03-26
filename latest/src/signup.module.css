@@ -1,0 +1,76 @@
+body{
+    background-image: url("./book.png");
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+img{
+    width: 100%;
+}
+.signup_box{
+    width: 800px;
+    height: 1000px;
+    background-color: aliceblue;
+   
+    margin: auto;
+    margin-top: 30px;
+    
+}
+
+h1{
+    color: blue;
+    text-align: center;
+    padding-top: 20px;
+}
+h3{
+    color: blue;
+    text-align: center;
+    padding-top: 9px;
+}
+.form{
+
+    
+    
+
+    padding-left: 80px;
+   
+}
+
+
+.form  label{
+    color: rgb(2, 2, 239);
+    display: flex;
+    margin-top: 20px;
+    font-size: 20px;
+    
+}
+label{
+    color: blue;
+}
+form input{
+    padding-right: 148px;
+  padding: 7px;
+  color: rgb(0, 0, 0);
+}
+.submit{
+    background-color: blue;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(246, 246, 249);
+    margin-left: 10px;
+    
+   
+}
+@media screen  and (max-width: 900px){
+    
+    
+}
+p{
+    font-size: 20px;
+    text-align: center;
+}
+
+p a{
+    font-size: 20px;
+   text-align: center;
+}
