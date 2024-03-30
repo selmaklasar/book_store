@@ -76,6 +76,15 @@ const [showDropdown, setShowDropdown] = useState(false);
         <input type="text" placeholder="type your favorite books"  ref={inputref} className={style.txt}/>
         <input onClick={focus_input} type="button" value="Search" className={style.search}/></div>
         <img className={style.menuimg}  onClick={mouserin} onMouseDown={mosueout} src={menu} alt="menu"/>
+        <p className={style.abtus}>About Us</p>
+        <p className={style.abt}>
+            
+      This website used for books.You can shop your favorite books Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+        <div className={style.footer}>
+            <p>Follow Us:</p>
+            <FontAwesomeIcon icon="fa-brands fa-facebook" />
+        </div>
     
     {hover &&(
         <ul className={style.dropdown_list} >
