@@ -1,8 +1,8 @@
+
 import React, { useState } from 'react';
 import style from './feedback.module.css';
 import axios from 'axios';
-
-
+import { Link } from 'react-router-dom'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -40,20 +40,26 @@ if(response.status===200){
     console.log("Thankyou for your feedback") 
     
 
-    toast.success("Success Notification !", {
+    toast.success("ThankYou For your feedback !", {
         position: "top-right",
     });
 
 
 }
+
 else {
     console.log("Failed to submit feedback");
   }
 }
-    
+   
 catch (error) {
 if (error.response && error.response.status === 500) {
     setSignupMessage('You need to signup First');
+    toast.error("Incorrect Email!", {
+        position:  "top-right",
+      });
+    
+
 } else {
     console.error('Error:', error);
 }
@@ -66,7 +72,23 @@ if (error.response && error.response.status === 500) {
 
 <>
 <div className={style.div}>
-        <h2 className={style.h2}>PLEASE LET US KNOW YOUR FEEDBACK</h2>
+<div className={style.head}></div>
+        
+        <div className={style.div11}>
+           <h4 className={style.h4}>BOOKSHOPPE</h4> 
+           <div className={style.div2}>
+   
+   <ul className={style.Link}>
+       <Link to="/login">Login</Link>
+       <Link to="/signup">Sign Up</Link>
+        <Link to="/about">About</Link>
+       <Link to="/feedback">feedback</Link></ul>
+       
+       
+   </div>
+     </div> 
+     
+      
         <div className={style.div1}>
         <form className={style.form} onSubmit={handleSubmit}>
         <label className={style.name}>NAME</label>

@@ -71,7 +71,7 @@ const user=new mongoose.Schema({
             
             if (user3) {
                 console.log("user")
-                console.log(pass)
+                console.log(pass ,Emailid)
                 const match = await bcrypt.compare(pass, user3. Password); 
                 console.log(match)
                 if(match){
@@ -99,26 +99,33 @@ const user=new mongoose.Schema({
                const Feedback=req.body.feed
                 
 
+              console.log(Name,emailid,Feedback);
+              const user1 = new model({
+                       
+                email: emailid,
+                name: Name,
+                 feed:Feedback
+            });
+              user1.save();
+            
+
+        try{
                 
-      
-                try{
                     const user4 = await model.findOne({Email: emailid });
-                    console.log("user")
+                    console.log(user4)
+                    
                      
-              if(user4 .Email===emailid ){
+        if(user4 .Email===emailid ){
                 console.log("emails are match")
                 res.send("email match")
                 console.log(emailid);
                 console.log(Name);
                 console.log(Feedback)
               }
-              else{
-                console.log("emails do not match")
-                res.status(400).send("invalid email")
-              }
+              
             }
                 
-            catch{
+         catch{
                 res.status(500).send('Internal server error');
                } 
             

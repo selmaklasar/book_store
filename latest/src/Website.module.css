@@ -42,7 +42,8 @@
     color: #fff;
     background-color: blue;
     font-size: 25px;
-   
+    margin-top: -99px;
+
     margin-left: 620px;
 }
 
@@ -83,7 +84,7 @@ li{
     float: right;
     right: 10%;
     font-size: 30px;
-    top: -70px; 
+    top: -60px; 
     position: relative;
     padding-left: 35px;
     font-family: 'Times New Roman', Times, serif;
